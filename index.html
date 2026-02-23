@@ -21,7 +21,6 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             -webkit-font-smoothing: antialiased;
         }
-
         .app-wrapper {
             max-width: 500px;
             margin: 0 auto;
@@ -30,16 +29,15 @@
             padding-bottom: 80px; 
             box-sizing: border-box;
         }
-
-        /* --- 底部导航栏样式 (终极修复版) --- */
+        /* --- 底部导航栏样式 --- */
         .bottom-nav {
             position: fixed;
             bottom: 0;
             left: 0;
-            right: 0; /* 左右都设为0 */
+            right: 0;
             width: 100%;
-            max-width: 500px; /* 限制最大宽度 */
-            margin: 0 auto; /* 使用自动外边距实现完美居中 */
+            max-width: 500px;
+            margin: 0 auto;
             height: 65px;
             background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
             display: flex;
@@ -74,7 +72,6 @@
         .nav-icon { font-size: 26px; margin-bottom: 4px; }
         .nav-text { font-size: 12px; font-weight: 500; }
         .nav-item.active .nav-text { font-weight: bold; }
-
         .page { display: none; padding: 20px; box-sizing: border-box; }
         .page.active { display: block; }
         
@@ -87,7 +84,6 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             margin-bottom: 20px;
         }
-
         /* 输入区域 */
         .smart-input-area { display: flex; gap: 10px; margin-bottom: 15px; }
         textarea {
@@ -106,13 +102,11 @@
             font-size: 20px; transition: all 0.3s;
         }
         .btn-voice.recording { background: #e74c3c; animation: pulse 1.5s infinite; }
-
         @keyframes pulse {
             0% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7); }
             70% { box-shadow: 0 0 0 10px rgba(231, 76, 60, 0); }
             100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0); }
         }
-
         /* 图片上传 */
         .image-upload-area {
             border: 2px dashed #ddd; border-radius: 10px; padding: 15px;
@@ -126,7 +120,6 @@
             color: white; border: none; border-radius: 50%; width: 24px; height: 24px; cursor: pointer;
         }
         .upload-hint { color: #888; font-size: 14px; }
-
         /* 表单 */
         .details-form {
             display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
@@ -143,7 +136,6 @@
             color: white; border: none; border-radius: 8px; font-size: 16px;
             margin-top: 15px; cursor: pointer;
         }
-
         /* 列表 */
         .record-list { display: flex; flex-direction: column; gap: 15px; }
         .record-card {
@@ -162,7 +154,6 @@
             transform: scale(1.05);
             box-shadow: 0 2px 8px rgba(0,0,0,0.2);
         }
-
         .record-info { flex: 1; }
         .record-title { font-weight: bold; font-size: 16px; margin: 0 0 5px 0; }
         .record-meta { font-size: 12px; color: #666; display: flex; gap: 10px; margin-bottom: 5px; }
@@ -177,7 +168,6 @@
         .status-已收货 { background-color: #2ecc71; }
         .status-退货中 { background-color: #e74c3c; }
         .status-已完成 { background-color: #95a5a6; }
-
         .status-editor {
             display: none; position: absolute; top: 30px; right: 0; background: white;
             border-radius: 8px; box-shadow: 0 5px 25px rgba(0,0,0,0.2); padding: 8px 0;
@@ -191,12 +181,10 @@
         .status-option:last-child { border-bottom: none; }
         .status-option:hover { background: #f8f9fa; }
         .status-option.selected { background: #e8f4fc; color: var(--primary-color); font-weight: bold; }
-
         .delete-btn {
             color: #ff4757; font-size: 12px; cursor: pointer; border: none;
             background: none; padding: 0; margin-top: 5px;
         }
-
         /* --- 图片预览模态框 --- */
         .img-modal {
             display: none;
@@ -234,7 +222,6 @@
             color: #ccc;
             font-size: 14px;
         }
-
         /* --- 统计页样式 --- */
         .stats-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
         .time-selector { display: flex; gap: 5px; background: #f0f0f0; border-radius: 20px; padding: 3px; }
@@ -248,7 +235,6 @@
         .stat-item { text-align: center; }
         .stat-value { font-size: 18px; font-weight: bold; color: #333; }
         .stat-label { font-size: 11px; color: #999; margin-top: 3px; }
-
         .stats-details { display: grid; grid-template-columns: 1fr; gap: 15px; }
         .chart-container { margin-top: 10px; }
         .platform-item { margin-bottom: 10px; }
@@ -257,7 +243,6 @@
         .platform-amount { color: var(--primary-color); font-weight: bold; }
         .platform-bar-bg { height: 6px; background: #f0f0f0; border-radius: 3px; overflow: hidden; }
         .platform-bar { height: 100%; background: var(--primary-color); border-radius: 3px; transition: width 0.5s ease; }
-
         .status-item { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid #f5f5f5; }
         .status-item:last-child { border-bottom: none; }
         .status-dot { width: 8px; height: 8px; border-radius: 50%; margin-right: 8px; display: inline-block; }
@@ -278,9 +263,7 @@
             color: white;
             transform: scale(1.05);
         }
-
         .no-data-stats { text-align: center; color: #999; font-size: 14px; padding: 20px 0; }
-
         /* --- 订单列表弹窗样式 --- */
         .order-modal {
             display: none;
@@ -381,7 +364,6 @@
             background: none;
             padding: 5px 10px;
         }
-
         .no-orders-tip {
             text-align: center;
             color: #999;
@@ -393,7 +375,6 @@
     </style>
 </head>
 <body>
-
 <div class="app-wrapper">
     <!-- 页面一：记录管理 -->
     <div id="page-record" class="page active">
@@ -401,13 +382,12 @@
         
         <div class="input-card">
             <div class="smart-input-area">
-                <textarea id="userInput" placeholder="点击麦克风说话，或手动输入..."></textarea>
+                <textarea id="userInput" placeholder="示例：淘宝 买牛奶 288元 已付款"></textarea>
                 <div class="btn-group">
                     <button class="btn-voice" id="voiceBtn" onclick="toggleVoiceRecognition()">🎤</button>
                     <button class="btn-parse" onclick="parseText()">识别</button>
                 </div>
             </div>
-
             <div class="image-upload-area" onclick="document.getElementById('imgInput').click()">
                 <input type="file" id="imgInput" accept="image/*" onchange="handleImage(this)">
                 <div id="uploadHint" class="upload-hint">📷 点击上传截图或拍照</div>
@@ -416,7 +396,6 @@
                     <button class="remove-img-btn" onclick="removeImage(event)">✕</button>
                 </div>
             </div>
-
             <div class="details-form">
                 <div class="form-group full-width">
                     <label>商品名称</label>
@@ -430,12 +409,14 @@
                     <label>平台</label>
                     <select id="platform">
                         <option value="淘宝">淘宝</option>
-                        <option value="天猫">天猫</option>
                         <option value="京东">京东</option>
-                        <option value="拼多多">拼多多</option>
+                        <option value="天猫">天猫</option>
                         <option value="微信小店">微信小店</option>
+                        <option value="拼多多">拼多多</option>
                         <option value="抖音">抖音</option>
                         <option value="小红书">小红书</option>
+                        <option value="亚马逊">亚马逊</option>
+                        <option value="远方好物">远方好物</option>
                         <option value="其他">其他</option>
                     </select>
                 </div>
@@ -456,10 +437,8 @@
             </div>
             <button class="btn-save" onclick="saveRecord()">保存记录</button>
         </div>
-
         <div id="recordList" class="record-list"></div>
     </div>
-
     <!-- 页面二：消费统计 -->
     <div id="page-stats" class="page">
         <h1>📊 消费统计</h1>
@@ -478,14 +457,12 @@
         <div class="stats-details" id="statsDetails"></div>
     </div>
 </div>
-
 <!-- 图片预览模态框 -->
 <div id="imgModal" class="img-modal" onclick="closeImgModal()">
     <span class="modal-close" onclick="closeImgModal()">&times;</span>
     <img class="modal-content" id="modalImg">
     <div class="modal-caption" id="modalCaption"></div>
 </div>
-
 <!-- 订单列表弹窗 -->
 <div id="orderModal" class="order-modal" onclick="closeOrderModal(event)">
     <div class="order-modal-content" onclick="event.stopPropagation()">
@@ -498,7 +475,6 @@
         </div>
     </div>
 </div>
-
 <!-- 底部导航栏 -->
 <nav class="bottom-nav">
     <div class="nav-inner">
@@ -512,15 +488,12 @@
         </div>
     </div>
 </nav>
-
 <script>
     // --- 数据初始化 ---
     let records = JSON.parse(localStorage.getItem('smart_shopping_records')) || [];
     let currentImageBase64 = null; 
     let currentTimeRange = 'month';
-
     document.getElementById('date').valueAsDate = new Date();
-
     // --- 页面切换 ---
     function switchPage(pageName) {
         document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
@@ -532,7 +505,6 @@
             renderStats(); 
         }
     }
-
     // --- 语音识别 ---
     let recognition;
     let isListening = false;
@@ -553,18 +525,15 @@
             document.getElementById('voiceBtn').innerText = '🎤';
         };
     } else { document.getElementById('voiceBtn').style.display = 'none'; }
-
     function toggleVoiceRecognition() {
         if (!recognition) { alert('浏览器不支持语音识别'); return; }
         isListening ? recognition.stop() : recognition.start();
     }
-
     document.addEventListener('click', (e) => {
         if (!e.target.closest('.status-badge') && !e.target.closest('.status-editor')) {
             closeAllStatusEditors();
         }
     });
-
     // --- 图片预览 ---
     function openImgModal(src, name) {
         const modal = document.getElementById('imgModal');
@@ -574,11 +543,9 @@
         modalImg.src = src;
         captionText.innerHTML = name;
     }
-
     function closeImgModal() {
         document.getElementById('imgModal').style.display = 'none';
     }
-
     // --- 订单弹窗功能 ---
     function openOrderModal(status) {
         const filteredRecords = getRecordsInRange();
@@ -614,14 +581,12 @@
         
         modal.style.display = 'flex';
     }
-
     function closeOrderModal(e) {
         if(!e || e.target === document.getElementById('orderModal')) {
             document.getElementById('orderModal').style.display = 'none';
             renderStats(); 
         }
     }
-
     function updateOrderStatus(id, newStatus) {
         const record = records.find(r => r.id === id);
         if (record) {
@@ -631,7 +596,6 @@
             renderRecords();
         }
     }
-
     function deleteOrderFromModal(id) {
         if(confirm('确定删除这条记录吗？')) {
             records = records.filter(r => r.id !== id);
@@ -642,7 +606,6 @@
             openOrderModal(currentStatus);
         }
     }
-
     // --- 文本解析 (已优化) ---
     function parseText() {
         const text = document.getElementById('userInput').value;
@@ -651,8 +614,8 @@
         // 1. 提取金额
         const priceMatch = text.match(/(\d+\.?\d*)\s*[元块]?/);
         if (priceMatch) document.getElementById('price').value = priceMatch[1];
-
-        // 2. 提取平台
+        
+        // 2. 提取平台 (已增加新平台)
         const platformKeywords = [
             { keys: ['微信小店', '微信'], value: '微信小店' },
             { keys: ['小红书', 'xhs', '红书'], value: '小红书' },
@@ -660,14 +623,16 @@
             { keys: ['淘宝', 'tb'], value: '淘宝' },
             { keys: ['天猫', 'tm'], value: '天猫' },
             { keys: ['京东', 'jd'], value: '京东' },
-            { keys: ['抖音', 'dy', 'douyin'], value: '抖音' }
+            { keys: ['抖音', 'dy', 'douyin'], value: '抖音' },
+            { keys: ['亚马逊', 'amazon', 'amz'], value: '亚马逊' }, // 新增
+            { keys: ['远方好物', '远方'], value: '远方好物' } // 新增
         ];
         let foundPlatform = '';
         for (let p of platformKeywords) { if (p.keys.some(keyword => text.includes(keyword))) { foundPlatform = p.value; break; } }
         const platformSelect = document.getElementById('platform');
         let options = Array.from(platformSelect.options).map(o => o.value);
         platformSelect.value = options.includes(foundPlatform) ? foundPlatform : '其他';
-
+        
         // 3. 提取状态
         const statusPatterns = [
             { regex: /退货中|退款中/, value: '退货中' }, { regex: /退货|退款/, value: '退货中' },
@@ -678,14 +643,13 @@
         let foundStatus = '已付款'; let matchedStatusText = '';
         for (let s of statusPatterns) { const match = text.match(s.regex); if (match) { foundStatus = s.value; matchedStatusText = match[0]; break; } }
         document.getElementById('status').value = foundStatus;
-
+        
         // 4. 清理商品名称
         let itemName = text;
         if (priceMatch) itemName = itemName.replace(priceMatch[0], '');
         platformKeywords.forEach(p => p.keys.forEach(k => itemName = itemName.replace(new RegExp(k, 'gi'), '')));
         if (matchedStatusText) itemName = itemName.replace(new RegExp(matchedStatusText, 'g'), '');
         
-        // 优化点：扩充了无用词列表，解决了“买奶粉”变“买”的问题
         const uselessWords = [
             '买的', '买了', '买', '拍了', '拍下', '购入', '购买', '下单', 
             '花费', '花了', '花了钱', '一个', '一件', '个', '件', '只', '条', 
@@ -697,7 +661,6 @@
         
         document.getElementById('itemName').value = itemName || '未命名商品';
     }
-
     function handleImage(input) {
         const file = input.files[0]; if (!file) return;
         const reader = new FileReader();
@@ -709,14 +672,12 @@
         }
         reader.readAsDataURL(file);
     }
-
     function removeImage(e) {
         e.stopPropagation(); currentImageBase64 = null;
         document.getElementById('imgInput').value = '';
         document.getElementById('uploadHint').style.display = 'block';
         document.getElementById('previewContainer').style.display = 'none';
     }
-
     function saveRecord() {
         const name = document.getElementById('itemName').value;
         const price = parseFloat(document.getElementById('price').value);
@@ -726,11 +687,9 @@
         localStorage.setItem('smart_shopping_records', JSON.stringify(records));
         renderRecords(); resetForm();
     }
-
     function resetForm() {
         document.getElementById('userInput').value = ''; document.getElementById('itemName').value = ''; document.getElementById('price').value = ''; removeImage(new Event('click')); 
     }
-
     function deleteRecord(id) {
         if(confirm('确定删除这条记录吗？')) {
             records = records.filter(r => r.id !== id);
@@ -738,26 +697,21 @@
             renderRecords();
         }
     }
-
     function toggleStatusEditor(id, event) {
         event.stopPropagation();
         closeAllStatusEditors();
         const editor = document.getElementById('editor-' + id);
         if (editor) editor.classList.add('show');
     }
-
     function closeAllStatusEditors() { document.querySelectorAll('.status-editor').forEach(e => e.classList.remove('show')); }
-
     function updateStatus(id, newStatus) {
         const record = records.find(r => r.id === id);
         if (record) { record.status = newStatus; localStorage.setItem('smart_shopping_records', JSON.stringify(records)); renderRecords(); }
     }
-
     function renderRecords() {
         const listContainer = document.getElementById('recordList');
         if (records.length === 0) { listContainer.innerHTML = '<p style="text-align:center; color:#999; padding:40px 0;">暂无记录</p>'; return; }
         const statusOptions = ['已付款', '已发货', '已收货', '退货中', '已完成'];
-
         listContainer.innerHTML = records.map(r => `
             <div class="record-card">
                 <div class="record-content">
@@ -790,7 +744,6 @@
             </div>
         `).join('');
     }
-
     // --- 统计逻辑 ---
     function changeTimeRange(range) {
         currentTimeRange = range;
@@ -798,7 +751,6 @@
         event.target.classList.add('active');
         renderStats();
     }
-
     function getRecordsInRange() {
         const now = new Date();
         const startOfWeek = new Date(now);
@@ -812,7 +764,6 @@
         }
         return records.filter(r => new Date(r.date) >= startDate && new Date(r.date) <= now);
     }
-
     function renderStats() {
         const filteredRecords = getRecordsInRange();
         const validRecords = filteredRecords.filter(r => r.status !== '退货中');
@@ -820,10 +771,8 @@
         const totalCount = validRecords.length;
         const avgAmount = totalCount > 0 ? totalAmount / totalCount : 0;
         const returnCount = filteredRecords.filter(r => r.status === '退货中').length;
-
         const statsContent = document.getElementById('statsContent');
         if (filteredRecords.length === 0) { statsContent.innerHTML = '<div class="no-data-stats">该时间段暂无数据</div>'; document.getElementById('statsDetails').innerHTML = ''; return; }
-
         statsContent.innerHTML = `
             <div class="stats-main">
                 <div class="total-amount">￥${totalAmount.toFixed(2)}</div>
@@ -834,16 +783,13 @@
                 <div class="stat-item"><div class="stat-value">￥${avgAmount.toFixed(0)}</div><div class="stat-label">平均每单</div></div>
                 <div class="stat-item"><div class="stat-value">${returnCount}</div><div class="stat-label">退货订单</div></div>
             </div>`;
-
         const platformStats = {};
         validRecords.forEach(r => { platformStats[r.platform] = (platformStats[r.platform] || 0) + r.price; });
         const platformArray = Object.entries(platformStats).sort((a, b) => b[1] - a[1]).slice(0, 5);
         const maxPlatformAmount = platformArray.length > 0 ? platformArray[0][1] : 0;
-
         const statusStats = {};
         filteredRecords.forEach(r => { statusStats[r.status] = (statusStats[r.status] || 0) + 1; });
         const statusColors = { '已付款': '#f1c40f', '已发货': '#3498db', '已收货': '#2ecc71', '退货中': '#e74c3c', '已完成': '#95a5a6' };
-
         let platformHtml = '<div class="input-card"><div class="chart-container"><div style="font-size:14px; color:#666; font-weight:bold; margin-bottom:10px;">📈 平台消费排行</div>';
         if (platformArray.length === 0) { platformHtml += '<div class="no-data-stats">暂无有效消费</div>'; } 
         else {
@@ -853,7 +799,6 @@
             });
         }
         platformHtml += '</div></div>';
-
         let statusHtml = '<div class="input-card"><div style="font-size:14px; color:#666; font-weight:bold; margin-bottom:10px;">📊 订单状态分布</div>';
         Object.entries(statusStats).forEach(([status, count]) => {
             statusHtml += `
@@ -866,11 +811,11 @@
                 </div>`;
         });
         statusHtml += '</div>';
-
         document.getElementById('statsDetails').innerHTML = platformHtml + statusHtml;
     }
-
     renderRecords();
 </script>
 </body>
 </html>
+
+
